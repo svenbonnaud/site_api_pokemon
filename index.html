@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acceuil.css" />
+    <title>pokemon</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site 89: <img class="logo" src="img/pokemon.PNG" alt="logo"></h1>
+        <div class="header-container">
+            <div class="menu-dropdown navbar-item">
+                        <select id="pokemon-types-dropdown" onchange="filterPokemonsByType()">
+                            <option>Choisissez un type...</option>
+                            <option value="normal">Normal</option>
+                            <option value="fire">Fire</option>
+                            <option value="water">Water</option>
+                            <option value="grass">Grass</option>
+                            <option value="electric">Electric</option>
+                            <option value="ice">Ice</option>
+                            <option value="fighting">Fighting</option>
+                            <option value="poison">Poison</option>
+                            <option value="ground">Ground</option>
+                            <option value="flying">Flying</option>
+                            <option value="psychic">Psychic</option>
+                            <option value="bug">Bug</option>
+                            <option value="rock">Rock</option>
+                            <option value="ghost">Ghost</option>
+                            <option value="dragon">Dragon</option>
+                            <option value="dark">Dark</option>
+                            <option value="steel">Steel</option>
+                            <option value="fairy">Fairy</option>
+                        </select>
+                    </div>
+                    <div class="menu-dropdown navbar-item">
+                        <select id="generation-select" onchange="filterPokemonsByGeneration()">
+                            <option value="0">Toutes les générations</option>
+                            <option value="generation-i">Première Génération</option>
+                            <option value="generation-ii">Deuxième Génération</option>
+                            <option value="generation-iii">Troisième Génération</option>
+                            <option value="generation-iv">Quatrième Génération</option>
+                            <option value="generation-v">Cinquième Génération</option>
+                            <option value="generation-vi">Sixième Génération</option>
+                            <option value="generation-vii">Septième Génération</option>
+                            <option value="generation-viii">Huitième Génération</option>
+                        </select>
+                    </div>
+            <div class="search-pokemon navbar-item">
+                <form id="search-form">
+                    <input class="search-message" type="text" id="saisie" name="saisie" placeholder="Entrez un Pokémon">
+                    <input class="search-button" type="submit" id="search-button" value="Search">
+                </form>
+            </div>
+
+        </div>
+    </header>
+    <div id="pokemon-details"></div>
+    <div id="pokemon-grid" class="pokemon-grid"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
