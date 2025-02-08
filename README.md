@@ -1,11 +1,11 @@
-# site_api_pokemon
+# Site API Pokemon
 
-## What the project do ?
+## What does the project do ?
 
-It's a project in HTML, CSS, and JavaScript
+It's a project build with HTML, CSS, and JavaScript
 This site is a Pokédex where you can explore Pokémon, view their types, generations, and weaknesses.
-that base on the api pokemon.
+which is based on the Pokémon API.
 
-## feature
+## Feature
 - Apply filters to the Pokédex to narrow down your search.
 - Search for a specific Pokémon by its name.
